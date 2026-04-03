@@ -1,0 +1,7 @@
+{
+  "submit_url": "",
+  "status_url_template": "",
+  "result_url_template": "",
+  "api_key_env": "CLOUD_RF_API_KEY",
+  "timeout_sec": 60
+}

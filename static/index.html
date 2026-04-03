@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini-binder Structure Viewer</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+</head>
+<body>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">Target-driven mini-binder exploration</p>
+      <h1>Target Selection and 3D Binding Viewer</h1>
+      <p class="sub">
+        Select a target protein icon, then load the latest mini-binder or generate a new one.
+        The viewer shows the 3D structure and spatial binding relationship between target (chain A) and mini-binder (chain B).
+      </p>
+    </header>
+
+    <section class="panel">
+      <div class="table-header">
+        <h2>Target Gallery</h2>
+        <p>Select one target to continue.</p>
+      </div>
+      <div id="targetGrid" class="target-grid"></div>
+      <div class="target-actions">
+        <button id="loadLatestBtn" type="button">Load Latest Mini-binder</button>
+      </div>
+      <div id="targetStatus" class="status">Loading target catalog...</div>
+    </section>
+
+    <section class="panel">
+      <div id="designStatus" class="status">Select a target to view result.</div>
+
+      <div id="designResult" class="hidden">
+        <div class="design-cards">
+          <article class="info-card">
+            <h3>Design Metadata</h3>
+            <p id="designMeta"></p>
+          </article>
+          <article class="info-card">
+            <h3>Binder Sequence</h3>
+            <code id="binderSeq" class="seq"></code>
+          </article>
+          <article class="info-card">
+            <h3>Binding Summary</h3>
+            <p id="bindingNote"></p>
+          </article>
+        </div>
+
+        <div class="viewer-wrap">
+          <div id="viewer3d" class="viewer"></div>
+        </div>
+
+        <div id="designFiles" class="file-links"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

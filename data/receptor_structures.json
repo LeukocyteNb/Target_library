@@ -1,0 +1,10 @@
+{
+  "PDCD1": {"label": "PD-1", "target_family": "Immune checkpoint", "default_hotspot": "FG loop"},
+  "CD274": {"label": "PD-L1", "target_family": "Immune checkpoint", "default_hotspot": "IgV interface"},
+  "CTLA4": {"label": "CTLA-4", "target_family": "Immune checkpoint", "default_hotspot": "ligand interface"},
+  "LAG3": {"label": "LAG-3", "target_family": "Immune checkpoint", "default_hotspot": "D1 domain"},
+  "TIGIT": {"label": "TIGIT", "target_family": "Immune checkpoint", "default_hotspot": "IgV interface"},
+  "HAVCR2": {"label": "TIM-3", "target_family": "Checkpoint", "default_hotspot": "IgV groove"},
+  "KLRK1": {"label": "NKG2D", "target_family": "NK receptor", "default_hotspot": "ligand-binding face"},
+  "CXCR4": {"label": "CXCR4", "target_family": "Chemokine receptor", "default_hotspot": "extracellular loops"}
+}

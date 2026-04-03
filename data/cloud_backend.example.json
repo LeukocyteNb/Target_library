@@ -1,0 +1,7 @@
+{
+  "submit_url": "https://your-cloud-service.example.com/api/rfdiffusion/submit",
+  "status_url_template": "https://your-cloud-service.example.com/api/rfdiffusion/status/{job_id}",
+  "result_url_template": "https://your-cloud-service.example.com/api/rfdiffusion/result/{job_id}",
+  "api_key_env": "CLOUD_RF_API_KEY",
+  "timeout_sec": 60
+}

@@ -1,0 +1,16 @@
+{
+  "workdir": "E:/RFdiffusion",
+  "timeout_sec": 3600,
+  "command": [
+    "E:/Anaconda3/Scripts/conda.exe",
+    "run",
+    "-n",
+    "SE3nv",
+    "python",
+    "scripts/run_inference.py",
+    "inference.output_prefix={output_prefix}",
+    "inference.num_designs=1",
+    "contigmap.contigs=[A1-120/{binder_len}]",
+    "ppi.hotspot_res=[A60,A61,A62]"
+  ]
+}
