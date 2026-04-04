@@ -1,10 +1,62 @@
 {
-  "PDCD1": {"label": "PD-1", "target_family": "Immune checkpoint", "default_hotspot": "FG loop"},
-  "CD274": {"label": "PD-L1", "target_family": "Immune checkpoint", "default_hotspot": "IgV interface"},
-  "CTLA4": {"label": "CTLA-4", "target_family": "Immune checkpoint", "default_hotspot": "ligand interface"},
-  "LAG3": {"label": "LAG-3", "target_family": "Immune checkpoint", "default_hotspot": "D1 domain"},
-  "TIGIT": {"label": "TIGIT", "target_family": "Immune checkpoint", "default_hotspot": "IgV interface"},
-  "HAVCR2": {"label": "TIM-3", "target_family": "Checkpoint", "default_hotspot": "IgV groove"},
-  "KLRK1": {"label": "NKG2D", "target_family": "NK receptor", "default_hotspot": "ligand-binding face"},
-  "CXCR4": {"label": "CXCR4", "target_family": "Chemokine receptor", "default_hotspot": "extracellular loops"}
+  "PDCD1": {
+    "label": "PD-1",
+    "target_family": "Immune checkpoint",
+    "default_hotspot": "FG loop",
+    "process_tags": ["T-cell exhaustion", "Checkpoint inhibition"]
+  },
+  "CD274": {
+    "label": "PD-L1",
+    "target_family": "Immune checkpoint ligand",
+    "default_hotspot": "IgV interface",
+    "process_tags": ["Tumor immune evasion", "Checkpoint inhibition"]
+  },
+  "CTLA4": {
+    "label": "CTLA-4",
+    "target_family": "T cell co-inhibition",
+    "default_hotspot": "ligand interface",
+    "process_tags": ["T-cell priming", "Co-inhibitory signaling"]
+  },
+  "TLR4": {
+    "label": "TLR4",
+    "target_family": "Innate sensing receptor",
+    "default_hotspot": "MD-2/LPS-binding region",
+    "process_tags": ["Innate sensing", "Inflammatory activation"]
+  },
+  "IL2RA": {
+    "label": "CD25 (IL-2RA)",
+    "target_family": "Cytokine receptor",
+    "default_hotspot": "IL-2 contact surface",
+    "process_tags": ["T-cell expansion", "Cytokine signaling"]
+  },
+  "IFNGR1": {
+    "label": "IFNGR1",
+    "target_family": "Interferon receptor",
+    "default_hotspot": "IFN-gamma binding interface",
+    "process_tags": ["Antiviral response", "Macrophage activation"]
+  },
+  "CCR7": {
+    "label": "CCR7",
+    "target_family": "Chemokine receptor",
+    "default_hotspot": "extracellular loops",
+    "process_tags": ["Lymphocyte trafficking", "Lymph node homing"]
+  },
+  "CXCR4": {
+    "label": "CXCR4",
+    "target_family": "Chemokine receptor",
+    "default_hotspot": "extracellular loops",
+    "process_tags": ["Cell migration", "Bone marrow homing"]
+  },
+  "CLEC9A": {
+    "label": "DNGR-1 (CLEC9A)",
+    "target_family": "Dendritic cell C-type lectin",
+    "default_hotspot": "C-type lectin-like domain",
+    "process_tags": ["Cross-presentation", "Dead-cell sensing"]
+  },
+  "MS4A7": {
+    "label": "MS4A7",
+    "target_family": "Myeloid membrane protein",
+    "default_hotspot": "extracellular loop region",
+    "process_tags": ["Myeloid differentiation", "Inflammation remodeling"]
+  }
 }

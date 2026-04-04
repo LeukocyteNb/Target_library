@@ -49,10 +49,14 @@ function renderTargetCards(targets) {
     card.type = 'button';
     card.className = 'target-card';
     card.dataset.receptor = target.receptor;
+    const tagsHtml = (target.process_tags || [])
+      .map((tag) => `<span class="tag-chip">${tag}</span>`)
+      .join('');
     card.innerHTML = `
       <span class="target-name">${target.label || target.receptor}</span>
       <span class="target-meta">${target.receptor} | ${target.target_family || 'Unknown'}</span>
       <span class="target-meta">${target.has_design ? 'Latest design available' : 'No local design yet'}</span>
+      <span class="target-tags">${tagsHtml}</span>
     `;
 
     card.addEventListener('click', () => {

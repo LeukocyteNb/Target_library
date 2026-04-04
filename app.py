@@ -519,7 +519,8 @@ def receptor_icon_for_family(family):
 
 def list_target_catalog():
     catalog = []
-    receptors = sorted(set(KNOWN_RECEPTORS) | set(RECEPTOR_META.keys()))
+    # The website target gallery is intentionally curated by receptor_structures.json.
+    receptors = sorted(set(RECEPTOR_META.keys()))
     for receptor in receptors:
         meta = RECEPTOR_META.get(receptor, {})
         family = str(meta.get("target_family", "Unknown")).strip() or "Unknown"
@@ -530,6 +531,7 @@ def list_target_catalog():
                 "label": meta.get("label", receptor),
                 "target_family": family,
                 "default_hotspot": meta.get("default_hotspot", "interface-guided"),
+                "process_tags": meta.get("process_tags", []),
                 "icon": receptor_icon_for_family(family),
                 "has_design": bool(latest_dir),
                 "latest_design_id": latest_dir.name if latest_dir else "",
