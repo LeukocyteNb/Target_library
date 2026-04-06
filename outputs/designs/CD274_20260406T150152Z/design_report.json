@@ -1,0 +1,32 @@
+{
+  "design_id": "CD274_20260406T150152Z",
+  "receptor": "CD274",
+  "mode": "imported",
+  "engine": "user-uploaded-result",
+  "created_at": "2026-04-06T15:01:52.155133+00:00",
+  "binder_length": 65,
+  "binder_sequence": "SKKLPQKVIDLLVESSKLWKESEEYKKKAEENPETKEEYLKKAEEAKEEAKKKREEARKLIKEAD",
+  "receptor_annotation": {
+    "label": "PD-L1",
+    "target_family": "Immune checkpoint ligand",
+    "default_hotspot": "IgV interface",
+    "process_tags": [
+      "Tumor immune evasion",
+      "Checkpoint inhibition"
+    ]
+  },
+  "requested_hotspot": "IgV interface",
+  "binding": {
+    "target_chain": "A",
+    "binder_chain": "B",
+    "target_hotspot_residues": [],
+    "binding_interface_note": "Imported from user-provided mini-binder result archive. Target chain inferred as A. Binder chain(s): B.",
+    "distance_estimate_angstrom": "n/a",
+    "confidence_note": "Imported external design result. Residue-level interface should be validated downstream."
+  },
+  "files": {
+    "complex_pdb": "/designs/CD274_20260406T150152Z/complex_model.pdb",
+    "binder_pdb": "/designs/CD274_20260406T150152Z/binder_chain_B.pdb",
+    "report_json": "/designs/CD274_20260406T150152Z/design_report.json"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "design_id": "IFNGR1_20260406T150152Z",
+  "receptor": "IFNGR1",
+  "mode": "imported",
+  "engine": "user-uploaded-result",
+  "created_at": "2026-04-06T15:01:52.226968+00:00",
+  "binder_length": 62,
+  "binder_sequence": "TEERLEKLEKEAEILTKEIEEAEKKAAEEEDEEKKEKLLKLAENLKKERKAIEEEREKLLKE",
+  "receptor_annotation": {
+    "label": "IFNGR1",
+    "target_family": "Interferon receptor",
+    "default_hotspot": "IFN-gamma binding interface",
+    "process_tags": [
+      "Antiviral response",
+      "Macrophage activation"
+    ]
+  },
+  "requested_hotspot": "IFN-gamma binding interface",
+  "binding": {
+    "target_chain": "A",
+    "binder_chain": "B",
+    "target_hotspot_residues": [],
+    "binding_interface_note": "Imported from user-provided mini-binder result archive. Target chain inferred as A. Binder chain(s): B.",
+    "distance_estimate_angstrom": "n/a",
+    "confidence_note": "Imported external design result. Residue-level interface should be validated downstream."
+  },
+  "files": {
+    "complex_pdb": "/designs/IFNGR1_20260406T150152Z/complex_model.pdb",
+    "binder_pdb": "/designs/IFNGR1_20260406T150152Z/binder_chain_B.pdb",
+    "report_json": "/designs/IFNGR1_20260406T150152Z/design_report.json"
+  }
+}

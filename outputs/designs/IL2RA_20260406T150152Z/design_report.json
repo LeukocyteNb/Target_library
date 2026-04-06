@@ -1,0 +1,32 @@
+{
+  "design_id": "IL2RA_20260406T150152Z",
+  "receptor": "IL2RA",
+  "mode": "imported",
+  "engine": "user-uploaded-result",
+  "created_at": "2026-04-06T15:01:52.243113+00:00",
+  "binder_length": 63,
+  "binder_sequence": "SKEKADKIAEKYTKKKLAETTAKLKEAKERVAAGDKSAEKELEELEEELESLEKELKELEASK",
+  "receptor_annotation": {
+    "label": "CD25 (IL-2RA)",
+    "target_family": "Cytokine receptor",
+    "default_hotspot": "IL-2 contact surface",
+    "process_tags": [
+      "T-cell expansion",
+      "Cytokine signaling"
+    ]
+  },
+  "requested_hotspot": "IL-2 contact surface",
+  "binding": {
+    "target_chain": "A",
+    "binder_chain": "B",
+    "target_hotspot_residues": [],
+    "binding_interface_note": "Imported from user-provided mini-binder result archive. Target chain inferred as A. Binder chain(s): B.",
+    "distance_estimate_angstrom": "n/a",
+    "confidence_note": "Imported external design result. Residue-level interface should be validated downstream."
+  },
+  "files": {
+    "complex_pdb": "/designs/IL2RA_20260406T150152Z/complex_model.pdb",
+    "binder_pdb": "/designs/IL2RA_20260406T150152Z/binder_chain_B.pdb",
+    "report_json": "/designs/IL2RA_20260406T150152Z/design_report.json"
+  }
+}

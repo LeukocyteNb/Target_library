@@ -5,3 +5,27 @@ __pycache__/
 *.pyd
 .env
 .venv/
+
+# Keep imported website demo structures for deployment
+!outputs/
+outputs/*
+!outputs/designs/
+outputs/designs/*
+!outputs/designs/CCR7_20260406T150152Z/
+!outputs/designs/CCR7_20260406T150152Z/**
+!outputs/designs/CD274_20260406T150152Z/
+!outputs/designs/CD274_20260406T150152Z/**
+!outputs/designs/CLEC9A_20260406T150152Z/
+!outputs/designs/CLEC9A_20260406T150152Z/**
+!outputs/designs/CTLA4_20260406T150152Z/
+!outputs/designs/CTLA4_20260406T150152Z/**
+!outputs/designs/CXCR4_20260406T150152Z/
+!outputs/designs/CXCR4_20260406T150152Z/**
+!outputs/designs/IFNGR1_20260406T150152Z/
+!outputs/designs/IFNGR1_20260406T150152Z/**
+!outputs/designs/IL2RA_20260406T150152Z/
+!outputs/designs/IL2RA_20260406T150152Z/**
+!outputs/designs/PDCD1_20260406T150152Z/
+!outputs/designs/PDCD1_20260406T150152Z/**
+!outputs/designs/TLR4_20260406T150152Z/
+!outputs/designs/TLR4_20260406T150152Z/**
