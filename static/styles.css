@@ -388,6 +388,8 @@ tbody tr.main-row:hover {
 }
 
 .viewer {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 430px;
   border-radius: 12px;

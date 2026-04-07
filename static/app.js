@@ -8,6 +8,7 @@ const designMetaEl = document.getElementById('designMeta');
 const binderSeqEl = document.getElementById('binderSeq');
 const bindingNoteEl = document.getElementById('bindingNote');
 const designFilesEl = document.getElementById('designFiles');
+const viewerEl = document.getElementById('viewer3d');
 
 let viewer = null;
 let selectedTarget = '';
@@ -89,7 +90,7 @@ function ensureViewer() {
     return null;
   }
   if (!viewer) {
-    viewer = $3Dmol.createViewer('viewer3d', { backgroundColor: '#f6faf5' });
+    viewer = $3Dmol.createViewer(viewerEl, { backgroundColor: '#f6faf5' });
   }
   return viewer;
 }
@@ -107,6 +108,7 @@ function render3D(complexPdb) {
     v.setStyle({ chain: 'A' }, { cartoon: { color: '#6f9b73' }, line: { color: '#6f9b73', linewidth: 2.0 } });
     v.setStyle({ chain: 'B' }, { stick: { color: '#c96f3a', radius: 0.28 }, line: { color: '#c96f3a', linewidth: 2.2 } });
     v.zoomTo();
+    v.resize();
     v.render();
   } catch (err) {
     setDesignStatus(`3D render failed: ${err.message}`, true);
